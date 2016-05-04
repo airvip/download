@@ -2,6 +2,7 @@
 this is a demo . use php write some down code. 
 
 前台
+<code>
 <form action="apiUpload.php" method="post" enctype="multipart/form-data">
 	<div class="input-group" id="search">
 		<input type="hidden" name="MAX_FILE_SIZE" value="3145728">
@@ -11,7 +12,7 @@ this is a demo . use php write some down code.
 		</span>
 	</div>
 </form>
-
+</code>
 调用
 require_once './App/Upload.class.php';
 $files = getFiles();

@@ -27,14 +27,22 @@
     <div class="row">
         <div class="col-xs-12">
             <h4 class="text-center">文件上传</h4>
-            <form action="./App/doUpload.php" method="post" enctype="multipart/form-data">
+            <form action="apiUpload.php" method="post" enctype="multipart/form-data">
                 <div class="input-group" id="search">
-                    <input type="file" name="myFile" required class="form-control" id="phone-number" >
+                    <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                    <input type="file" name="myFile[]" required multiple="multiple" class="form-control" id="my-file"  accept="application/x-zip-compressed,application/gzip,image/jpeg,image/jpg,image/gif,image/png">
                     <span class="input-group-btn">
                         <button class="btn btn-success" type="submit" id="sub-phone"><span class="glyphicon glyphicon-open"></span></button>
                     </span>
                 </div>
             </form>
+            <h4 class="text-center">该上传类支持jpg,jpeg,zip,png,gif格式上传,最大3M，支持单文件多文件，多文件file的属性name=xxx[]</h4>
+            <p class="text-center">
+                <a class="btn btn-success btn-xs" href="https://github.com/airvip/download.git">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    源码查看
+                </a>
+            </p>
 
 
             <footer id="find-phone-footer">

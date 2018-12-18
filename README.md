@@ -29,6 +29,8 @@ $uploadFiles = array_values(array_filter($uploadFiles));
 
 ```
 
+支持多文件上传
+
 
 
 

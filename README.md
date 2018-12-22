@@ -1,7 +1,7 @@
 # download demo use php
 this is a demo . use php write some down code. 
 
-前台
+前端表单
 ```
 <form action="apiUpload.php" method="post" enctype="multipart/form-data">
 	<div class="input-group" id="search">

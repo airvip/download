@@ -15,7 +15,7 @@ this is a demo . use php write some down code.
 ```
 调用
 ```
-require_once './App/Upload.class.php'; // 引入扩展
+require_once './App/Upload.class.php'; 
 $files = getFiles();
 
 
